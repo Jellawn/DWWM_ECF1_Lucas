@@ -1,0 +1,23 @@
+@use "components/button";
+@use "components/title";
+@use "components/header";
+@use "components/hero";
+@use "components/equalizer";
+@use "components/main";
+@use "abstract/variables" as *;
+@use "components/cards";
+@use "components/formulaire.scss";
+@use "components/footer";
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  // background-color: var(--grad-start);
+  background-image: linear-gradient(
+    to bottom,
+    var(--grad-start) 0%,
+    var(--grad-end) 100%
+  );
+  font-family: sans-serif;
+}

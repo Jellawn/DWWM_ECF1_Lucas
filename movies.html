@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Cinéma néon dynasty</title>
+</head>
+
+<body>
+    <header class="header">
+
+
+        <div class="header__inner">
+            <div class="header__navbar-container">
+                <a href="index.html" class="header__buttons--primary" aria-label="Accueil">
+                    <img src="SRC/Img/Icons/favicon.ico" alt="Logo Cinéma Néon Dynasty" class="header__logo" />
+                </a>
+            </div>
+
+            <div class="header__buttons">
+                <button class="header__button" type="button" aria-label="Recherche">
+                    <img src="SRC/Img/Icons/search.png" alt="Recherche" class="header__icon" />
+                </button>
+                <a class="header__button" aria-label="Profil utilisateur" href="contact.html">
+                    <img src="SRC/Img/Icons/account.png" alt="Profil utilisateur" class="header__icon" />
+                </a>
+                <button class="header__button" type="button" aria-label="Menu">
+                    <img src="SRC/Img/Icons/burger.png" alt="Menu" class="header__icon" />
+                </button>
+            </div>
+        </div>
+    </header>
+    <section class="what-cinema">
+        <div class="cinema-actions">
+            <button class="cta-movies cta-movies--primary" type="button">
+                <span class="cta-movies__text">Selectionnez votre cinéma</span>
+                <span class="cta-movies__arrow" aria-hidden="true">›</span>
+            </button>
+
+            <div class="filter-bar">
+                <select id="sort-select" class="filter-bar__select">
+                    <option value="">-- Choisir --</option>
+                    <option value="asc">Prix croissant</option>
+                    <option value="desc">Prix décroissant</option>
+                </select>
+            </div>
+        </div>
+    </section>
+    <main id="cards-container"></main>
+    <footer class="site-footer">
+        <div class="site-footer__socials">
+            <ul class="site-footer__icons">
+                <li><a href="#" class="site-footer__icon"><img src="SRC/Img/Icons/ic--baseline-facebook.png"
+                            alt="Facebook"></a></li>
+                <li><a href="#" class="site-footer__icon"><img src="SRC/Img/Icons/twitter.png" alt="X"></a></li>
+                <li><a href="#" class="site-footer__icon"><img src="SRC/Img/Icons/instagram.png" alt="Instagram"></a>
+                </li>
+                <li><a href="#" class="site-footer__icon"><img src="SRC/Img/Icons/youtube.png" alt="YouTube"></a></li>
+                <li><a href="#" class="site-footer__icon"><img src="SRC/Img/Icons/tiktok.png" alt="TikTok"></a></li>
+                <li><a href="#" class="site-footer__icon"><img src="SRC/Img/Icons/linkedin.png" alt="LinkedIn"></a></li>
+            </ul>
+        </div>
+
+        <div class="site-footer__legal">
+            <p class="site-footer__link">Mentions légales</p>
+            <p class="site-footer__text">Cinéma Nova Olympia Services © 2025</p>
+            <p class="site-footer__text">Tous droits réservés ®</p>
+        </div>
+    </footer>
+    <scripSRC src="src/JS/cinema.js">
+        </scripSRC< /body>
+
+
+</html>

@@ -1,0 +1,18 @@
+$color-dark: #2e2a39;
+$color-light: #e8ffff;
+$color-blue: #83feff;
+$color-pink: #fd55b7;
+
+:root {
+  --grad-start: #1700df;
+  --grad-end: #2e2a39;
+}
+
+// variables.scss equalizer
+:root {
+  --eq-bar-count: 30;
+  --eq-bar-width: 15vh;
+  --eq-bar-gap: 0.25vh;
+  --eq-bar-color: linear-gradient(0deg, #83feff 0%, #fd55b7 100%);
+  --eq-height: 25vh;
+}

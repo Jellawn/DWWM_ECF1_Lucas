@@ -1,0 +1,94 @@
+/* principal block */
+@use "../abstract/variables" as *;
+
+.header {
+  width: 100%;
+  height: auto;
+  min-height: 125px;
+  background: url("../../SRC/Img/affiche.png") no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* interior Wrapper for padding and center */
+.header__inner {
+  width: 100%;
+  margin: 0;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* buttons container */
+.header__buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+/* action button */
+.header__button {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.header__button:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* PNG Icons */
+.header__icon {
+  display: block;
+  width: 45px;
+  height: auto;
+  object-fit: contain;
+}
+
+.header__buttons--primary {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: default;
+}
+.header__logo {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 110px;
+  object-fit: contain;
+}
+
+.header__logo-container {
+  display: flex;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .header {
+    min-height: 100px;
+  }
+
+  .header__inner {
+    padding: 0 0.5rem;
+  }
+
+  .header__buttons {
+    gap: 0.5rem;
+  }
+
+  .header__icon {
+    width: 35px;
+  }
+
+  .header__logo {
+    max-width: 80px;
+  }
+}

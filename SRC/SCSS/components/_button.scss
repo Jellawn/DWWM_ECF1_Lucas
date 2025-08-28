@@ -1,0 +1,138 @@
+@use "../abstract/variables" as *;
+/* Bouton d’appel à l’action (CTA) */
+
+.hero__cta-button {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 1.5rem;
+  padding: 1em 1.75em;
+  border: none;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Modificateur pour couleur principale */
+.cta-button--primary {
+  background-color: $color-pink;
+  color: $color-dark;
+
+  &:hover {
+    background-color: #e73370;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 64, 129, 0.4);
+  }
+}
+/* Élément icône */
+.cta-button__icon {
+  display: inline-block;
+  width: 1.25em;
+  height: 1.25em;
+  margin-right: 0.5em;
+  fill: currentColor;
+}
+
+/* Élément texte */
+.cta-button__text {
+  line-height: 1;
+}
+
+.cta-movies {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(0.5rem, 1vw, 1rem) clamp(1rem, 2vw, 2rem);
+  margin: 0 auto;
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
+  font-weight: 600;
+  line-height: 1;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  background-color: transparent;
+  color: $color-light;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease,
+    color 0.2s ease;
+
+  /* Modificateur : fond violet + bord rose */
+  &--primary {
+    background-color: transparentize($color-light, 0.8);
+    border-color: $color-pink;
+  }
+
+  /* Hover : renforce le contraste */
+  &:hover {
+    background-color: transparentize(
+      $color-pink,
+      0.2
+    ); /* couleur plus sombre */
+    color: $color-dark;
+  }
+
+  /* Texte : espace avant l’icône */
+  &__text {
+    margin-right: 0.75rem;
+  }
+
+  /* Flèche : légère animation sur hover */
+  &__arrow {
+    font-size: 1.2em;
+    display: inline-block;
+    transition: transform 0.2s ease;
+  }
+
+  /* Quand on survole le bouton, décale la flèche */
+  &:hover &__arrow {
+    transform: translateX(0.25rem);
+  }
+}
+
+.cinema-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; // espace entre les deux boutons
+  flex-wrap: wrap; // pour que ça passe bien sur mobile
+}
+.what-cinema {
+  display: flex;
+  // text-align: center;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#sort-select {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 2px solid $color-pink;
+  background-color: transparentize($color-light, $amount: 0.8);
+  color: $color-light;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#sort-select:hover {
+  background-color: transparentize($color-light, 0.2); /* couleur plus sombre */
+  color: $color-dark;
+}
+
+#sort-select:focus {
+  outline: none;
+  border-color: #2c6ed5;
+  box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.3);
+}

@@ -1,0 +1,87 @@
+.movies-playing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    height: auto;
+
+    // 1) cache les radios
+    &__control {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+
+      // 2) translation du track selon l’input coché
+      &:nth-of-type(1):checked ~ .slider__slides {
+        transform: translateX(0);
+      }
+      &:nth-of-type(2):checked ~ .slider__slides {
+        transform: translateX(-100%);
+      }
+      &:nth-of-type(3):checked ~ .slider__slides {
+        transform: translateX(-200%);
+      }
+    }
+
+    // 3) wrapper des slides
+    &__slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      align-items: center;
+    }
+
+    // 4) chaque slide 100% du conteneur
+    &__slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 0 0 100%;
+      margin-bottom: 2.5rem;
+    }
+
+    // 5) image responsive
+    &__img {
+      display: block;
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    // 6) nav des pastilles
+    &__nav {
+      position: absolute;
+      bottom: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    &__nav-item {
+      width: 0.75rem;
+      height: 0.75rem;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.5);
+      cursor: pointer;
+      transition: background 0.3s;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.8);
+      }
+    }
+  }
+
+  // 7) pastille active selon l’input coché
+  #slide1:checked ~ .slider__nav .slider__nav-item:nth-of-type(1),
+  #slide2:checked ~ .slider__nav .slider__nav-item:nth-of-type(2),
+  #slide3:checked ~ .slider__nav .slider__nav-item:nth-of-type(3) {
+    background: #ffffff;
+  }
+}

@@ -1,0 +1,60 @@
+@use "../abstract/variables" as *;
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.hero__title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+.hero__title {
+  width: clamp(300px, 40vw, 600px);
+  height: auto;
+}
+.hero__img-container {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  position: revert; // pour l’overlay mobile
+  flex-shrink: 0;
+}
+.hero__img {
+  width: clamp(300px, 40vw, 600px);
+  display: block;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .hero {
+    display: block; // titre → visuel
+    text-align: center;
+  }
+
+  .hero__title-container {
+    order: 1;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .hero__img-container {
+    order: 2;
+    width: 100%;
+  }
+
+  .hero__cta-button {
+    // on passe le bouton en overlay sur le visuel
+    position: absolute;
+    bottom: 355px;
+    left: 0.5rem;
+    margin: 0; // annule le gap desktop
+  }
+}

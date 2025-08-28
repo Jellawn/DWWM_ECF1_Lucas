@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Ciména Néon Dynasty</title>
+</head>
+
+<body>
+    <header class="header">
+
+
+        <div class="header__inner">
+            <div class="header__navbar-container">
+                <a class="header__buttons--primary" type="button" href="index.html" aria-label="Accueil">
+                    <img src="SRC/Img/Icons/favicon.ico" alt="Logo Cinéma Néon Dynasty" class="header__logo" />
+                </a>
+            </div>
+
+            <div class="header__buttons">
+                <button class="header__button" type="button" aria-label="Recherche">
+                    <img src="SRC/Img/Icons/search.png" alt="Recherche" class="header__icon" />
+                </button>
+                <button class="header__button" type="button" aria-label="Profil utilisateur">
+                    <img src="SRC/Img/Icons/account.png" alt="Profil utilisateur" class="header__icon" />
+                </button>
+                <button class="header__button" type="button" aria-label="Menu">
+                    <img src="SRC/Img/Icons/burger.png" alt="Menu" class="header__icon" />
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="signup">
+            <h2 class="signup__title">Inscription au Cinéma</h2>
+            <form class="signup__form" id="signup-form">
+                <div class="signup__field">
+                    <label for="name">Nom complet</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+
+                <div class="signup__field">
+                    <label for="email">Adresse e-mail</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+
+                <div class="signup__field">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" required minlength="6" />
+                </div>
+
+                <div class="signup__field">
+                    <label for="confirm">Confirmer le mot de passe</label>
+                    <input type="password" id="confirm" name="confirm" required />
+                </div>
+
+                <button type="submit" class="signup__btn">S'inscrire</button>
+            </form>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <dSRC class="site-footer__socials">
+            <ul class="site-footer__icons">
+                <li><a href="#" class="site-footer__icon"><img src="SRC/Img/Icons/ic--baseline-facebook.png"
+                            alt="Facebook"></a></li>
+                <li><a href="#" class="site-footer__icon"><img src="SRC/Img/Icons/twitter.png" alt="X"></a></li>
+                <li><a href="#" class="site-footer__icon"><img src="SRC/Img/Icons/instagram.png" alt="Instagram"></a>
+                </li>
+                <li><a href="#" class="site-footer__icon"><img src="SRC/Img/Icons/youtube.png" alt="YouTube"></a></li>
+                <li><a href="#" class="site-footer__icon"><img src="SRC/Img/Icons/tiktok.png" alt="TikTok"></a></li>
+                <li><a href="#" class="site-footer__icon"><img src="SRC/Img/Icons/linkedin.png" alt="LinkedIn"></a></li>
+            </ul>
+        </dSRC <div class="site-footer__legal">
+        <p class="site-footer__link">Mentions légales</p>
+        <p class="site-footer__text">Cinéma Nova Olympia Services © 2025</p>
+        <p class="site-footer__text">Tous droits réservés ®</p>
+        </div>
+    </footer>
+</body>
+
+</html>

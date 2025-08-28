@@ -1,0 +1,27 @@
+@use "../abstract/variables" as *;
+
+.now-showing-wrapper {
+  display: flex; // largeur s’adapte au contenu
+  justify-content: flex-start;
+  align-items: flex-start; // pour tout positionnement interne
+}
+
+.now-showing {
+  clip-path: inset(0 0 0 8px);
+  display: flex;
+  padding: 1rem;
+  background-color: $color-pink;
+  border-radius: 8px;
+  margin: 0;
+  margin-top: 3rem;
+  width: auto;
+  max-width: 200px;
+
+  &__label {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: $color-dark; // presque noir
+    text-align: center;
+  }
+}

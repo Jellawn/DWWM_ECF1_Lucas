@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Cinéma Néon Dynasty</title>
+</head>
+
+<body class="body">
+
+    <!-- header navbar -->
+
+    <header class="header">
+        <nav class="header__inner" aria-label="Menu principal">
+            <div class="header__logo-container">
+                <button class="header__buttons--primary" type="button" aria-label="Accueil">
+                    <img src="SRC/Img/Icons/favicon.ico" alt="Logo Cinéma Néon Dynasty" class="header__logo" />
+                </button>
+            </div>
+
+            <div class="header__buttons">
+                <button class="header__button" type="button" aria-label="Recherche">
+                    <img src="SRC/Img/Icons/search.png" alt="Recherche" class="header__icon" />
+                </button>
+
+                <a class="header__button" href="contact.html" aria-label="Profil utilisateur">
+                    <img src="SRC/Img/Icons/account.png" alt="Profil utilisateur" class="header__icon" />
+                </a>
+
+                <button class="header__button" type="button" aria-label="Menu">
+                    <img src="SRC/Img/Icons/burger.png" alt="Menu" class="header__icon" />
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- landing page  -->
+
+    <main>
+        <section class="hero">
+            <div class="hero__title-container">
+                <img src="SRC/Img/Titre_ghost_in_the_shell.webp" alt="Titre ghost in the shell" class="hero__title">
+                <button class="hero__cta-button cta-button--primary" type="button">
+                    <img src="SRC/Img/Icons/ticket.png" alt="Ticket" class="cta-button__icon" />
+                    <span class="cta-button__text">Réservez maintenant</span>
+                </button>
+            </div>
+
+            <div class="hero__img-container">
+                <img src="SRC/Img/Ghost_In_The_Shell_couv.webp" alt="ghost in the shell" class="hero__img">
+            </div>
+        </section>
+
+        <!-- equalizer + button "Select your cinema"-->
+
+        <section class="equalizer" id="js-equalizer" aria-label="Lecteur audio avec égaliseur">
+            <div class="equalizer__bar"></div>
+            <div class="equalizer__bar"></div>
+            <div class="equalizer__bar"></div>
+            <div class="equalizer__bar"></div>
+            <div class="equalizer__bar"></div>
+            <div class="equalizer__bar"></div>
+            <div class="equalizer__bar"></div>
+            <div class="equalizer__bar"></div>
+            <div class="equalizer__bar"></div>
+            <div class="equalizer__bar"></div>
+            <div class="equalizer__bar"></div>
+            <div class="equalizer__bar"></div>
+            <div class="equalizer__bar"></div>
+            <div class="equalizer__bar"></div>
+            <div class="equalizer__bar"></div>
+            <div class="equalizer__bar"></div>
+            <div class="equalizer__bar"></div>
+            <div class="equalizer__bar"></div>
+            <div class="equalizer__bar"></div>
+            <div class="equalizer__bar"></div>
+            <div class="equalizer__bar"></div>
+            <div class="equalizer__bar"></div>
+            <div class="equalizer__bar"></div>
+            <div class="equalizer__bar"></div>
+            <div class="equalizer__bar"></div>
+            <div class="equalizer__bar"></div>
+            <div class="equalizer__bar"></div>
+            <div class="equalizer__bar"></div>
+            <div class="equalizer__bar"></div>
+            <div class="equalizer__bar"></div>
+
+            <div class="player-controls">
+                <button class="player-controls__btn" id="js-play-btn">Play / Stop</button>
+                <audio id="js-audio" src="SRC/MP3/Ghost_in_the_shell_op.mp3"></audio>
+            </div>
+        </section>
+
+        <section class="what-cinema">
+            <button class="cta-movies cta-movies--primary" type="button">
+                <span class="cta-movies__text">
+                    Selectionnez votre cinéma
+                </span>
+                <span class="cta-movies__arrow" aria-hidden="true">›</span>
+            </button>
+        </section>
+
+        <!-- section films now showing -->
+
+        <section class="now-showing--wrapper">
+            <div class="now-showing">
+                <h2 class="now-showing__label">Films à l'affiche</h2>
+            </div>
+        </section>
+
+        <section class="movies-playing" aria-label="Films actuellement au cinéma">
+            <div class="slider">
+
+                <input type="radio" name="slider" id="slide1" class="slider__control" checked />
+                <input type="radio" name="slider" id="slide2" class="slider__control" />
+                <input type="radio" name="slider" id="slide3" class="slider__control" />
+
+
+                <div class="slider__slides">
+                    <div class="slider__slide">
+                        <img src="SRC/Img/Akira.webp" alt="Film Akira" class="slider__img" />
+                    </div>
+                    <div class="slider__slide">
+                        <img src="SRC/Img/Altered_carbon.webp" alt="Film Altered carbon" class="slider__img" />
+                    </div>
+                    <div class="slider__slide">
+                        <img src="SRC/Img/Blade_runner.webp" alt="Film Blade Runner" class="slider__img" />
+                    </div>
+                </div>
+
+
+                <div class="slider__nav">
+                    <label for="slide1" class="slider__nav-item"></label>
+                    <label for="slide2" class="slider__nav-item"></label>
+                    <label for="slide3" class="slider__nav-item"></label>
+                </div>
+            </div>
+
+            <!-- button naviguate to movies.html -->
+
+            <a href="movies.html" class="cta-movies cta-movies--primary">
+                <span class="cta-movies__text">
+                    Tous les films actuellement au cinéma
+                </span>
+                <span class="cta-movies__arrow" aria-hidden="true">›</span>
+            </a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer__socials">
+            <ul class="site-footer__icons" aria-label="Réseaux sociaux">
+                <li><a href="#" class="site-footer__icon"><img src="SRC/Img/Icons/ic--baseline-facebook.png"
+                            alt="Facebook"></a></li>
+                <li><a href="#" class="site-footer__icon"><img src="SRC/Img/Icons/twitter.png" alt="X"></a></li>
+                <li><a href="#" class="site-footer__icon"><img src="SRC/Img/Icons/instagram.png" alt="Instagram"></a>
+                </li>
+                <li><a href="#" class="site-footer__icon"><img src="SRC/Img/Icons/youtube.png" alt="YouTube"></a></li>
+                <li><a href="#" class="site-footer__icon"><img src="src/Img/Icons/tiktok.png" alt="TikTok"></a></li>
+                <li><a href="#" class="site-footer__icon"><img src="SRC/Img/Icons/linkedin.png" alt="LinkedIn"></a></li>
+            </ul>
+        </div>
+
+        <div class="site-footer__legal" aria-label="Informations légales">
+            <p class="site-footer__link">Mentions légales</p>
+            <p class="site-footer__text">Cinéma Nova Olympia Services © 2025</p>
+            <p class="site-footer__text">Tous droits réservés ®</p>
+        </div>
+    </footer>
+
+    <script src="SRC/JS/script.js"></script>
+</body>
+
+</html>
