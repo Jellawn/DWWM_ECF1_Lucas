@@ -49,3 +49,32 @@
   width: 0; /* mis à jour en JS */
   transition: width 0.5s ease;
 }
+
+.cards__cta-button {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 1.5rem;
+  padding: 1em 1.75em;
+  border: none;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Modificateur pour couleur principale */
+.cards-button--primary {
+  background-color: $color-pink;
+  color: $color-dark;
+
+  &:hover {
+    background-color: #e73370;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 64, 129, 0.4);
+  }
+}

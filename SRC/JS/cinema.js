@@ -42,7 +42,7 @@ function renderCards(cards) {
           <p>${description}</p>
           <p><strong>Date:</strong> ${date} at ${time}</p>
           <p><strong>Durée:</strong> ${duration} min</p>
-          <button class="hero__cta-button cta-button--primary">Acheter</button>
+          <button class="cards__cta-button cta-button--primary">Acheter</button>
         </div>
       `;
       container.appendChild(card);
