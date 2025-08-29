@@ -1,5 +1,4 @@
 @use "../abstract/variables" as *;
-/* Bouton d’appel à l’action (CTA) */
 
 .hero__cta-button {
   display: inline-flex;
@@ -15,7 +14,6 @@
   transition: background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Modificateur pour couleur principale */
 .cta-button--primary {
   background-color: $color-pink;
   color: $color-dark;
@@ -29,7 +27,7 @@
     box-shadow: 0 0 0 3px rgba(255, 64, 129, 0.4);
   }
 }
-/* Élément icône */
+
 .cta-button__icon {
   display: inline-block;
   width: 1.25em;
@@ -38,7 +36,6 @@
   fill: currentColor;
 }
 
-/* Élément texte */
 .cta-button__text {
   line-height: 1;
 }
@@ -47,7 +44,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: clamp(0.5rem, 1vw, 1rem) clamp(1rem, 2vw, 2rem);
+  padding: clamp(0.5rem, 1vw, 1rem) clamp(1rem, 2vw, 2rem); // clamp pour la responsivité
   margin: 0 auto;
   font-size: clamp(0.875rem, 1.5vw, 1rem);
   font-weight: 600;
@@ -119,7 +116,7 @@
 }
 
 #sort-select:hover {
-  background-color: transparentize($color-light, 0.2); /* couleur plus sombre */
+  background-color: transparentize($color-light, 0.2);
   color: $color-dark;
 }
 
