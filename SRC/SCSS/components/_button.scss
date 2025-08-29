@@ -60,34 +60,26 @@
   transition: background-color 0.2s ease, border-color 0.2s ease,
     color 0.2s ease;
 
-  /* Modificateur : fond violet + bord rose */
   &--primary {
     background-color: transparentize($color-light, 0.8);
     border-color: $color-pink;
   }
 
-  /* Hover : renforce le contraste */
   &:hover {
-    background-color: transparentize(
-      $color-pink,
-      0.2
-    ); /* couleur plus sombre */
+    background-color: transparentize($color-pink, 0.2);
     color: $color-dark;
   }
 
-  /* Texte : espace avant l’icône */
   &__text {
     margin-right: 0.75rem;
   }
 
-  /* Flèche : légère animation sur hover */
   &__arrow {
     font-size: 1.2em;
     display: inline-block;
     transition: transform 0.2s ease;
   }
 
-  /* Quand on survole le bouton, décale la flèche */
   &:hover &__arrow {
     transform: translateX(0.25rem);
   }
@@ -97,12 +89,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem; // espace entre les deux boutons
-  flex-wrap: wrap; // pour que ça passe bien sur mobile
+  gap: 1rem;
+  flex-wrap: wrap;
 }
+
 .what-cinema {
   display: flex;
-  // text-align: center;
   justify-content: center;
   margin: 1rem 0;
 }

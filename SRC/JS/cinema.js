@@ -1,3 +1,5 @@
+// call the .json file and retrieve data for my future cards
+
 let cardsData = [];
 
 async function loadCards() {
@@ -26,7 +28,9 @@ function renderCards(cards) {
       description,
       duration,
     }) => {
-      const percent = Math.round((ticketsSold / capacity) * 100);
+      const percent = Math.round((ticketsSold / capacity) * 100); // create the variable for the percentage
+
+      // create the HTML structure of my cards and display it
 
       const card = document.createElement("article");
       card.className = "card";
@@ -50,7 +54,8 @@ function renderCards(cards) {
   );
 }
 
-// Événement sur le menu déroulant
+// Event on the drop-down menu
+
 document.getElementById("sort-select").addEventListener("change", (e) => {
   const value = e.target.value;
   let sorted = [...cardsData];

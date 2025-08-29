@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/styles.css">
     <title>Cinéma Néon Dynasty</title>
+    <link rel="icon" href="SRC/Img/Icons/favicon.ico" type="image/x-icon">
 </head>
 
 <body class="body">
@@ -16,7 +17,7 @@
         <nav class="header__inner" aria-label="Menu principal">
             <div class="header__logo-container">
                 <button class="header__buttons--primary" type="button" aria-label="Accueil">
-                    <img src="SRC/Img/Icons/favicon.ico" alt="Logo Cinéma Néon Dynasty" class="header__logo" />
+                    <img src="SRC/Img/Icons/Logo_bg_dark.png" alt="Logo Cinéma Néon Dynasty" class="header__logo" />
                 </button>
             </div>
 
@@ -29,7 +30,7 @@
                     <img src="SRC/Img/Icons/account.png" alt="Profil utilisateur" class="header__icon" />
                 </a>
 
-                <button class="header__button" type="button" aria-label="Menu">
+                <button id="Sidenav" class="header__button header_sidenav" type="button" aria-label="Menu">
                     <img src="SRC/Img/Icons/burger.png" alt="Menu" class="header__icon" />
                 </button>
             </div>
@@ -87,8 +88,9 @@
             <div class="equalizer__bar"></div>
             <div class="equalizer__bar"></div>
 
-            <div class="player-controls">
-                <button class="player-controls__btn" id="js-play-btn">Play / Stop</button>
+            <div class="player-controls ">
+                <button class="player-controls__btn cta-movies cta-movies--primary" id="js-play-btn">Play /
+                    Stop</button>
                 <audio id="js-audio" src="SRC/MP3/Ghost_in_the_shell_op.mp3"></audio>
             </div>
         </section>
@@ -162,6 +164,7 @@
                 <li><a href="#" class="site-footer__icon"><img src="SRC/Img/Icons/linkedin.png" alt="LinkedIn"></a></li>
             </ul>
         </div>
+        <!-- legal informations -->
 
         <div class="site-footer__legal" aria-label="Informations légales">
             <p class="site-footer__link">Mentions légales</p>
