@@ -8,7 +8,7 @@
     "capacity": 80,
     "description": "Dans un futur cybernétique, une policière cyborg enquête sur un mystérieux hacker appelé le Marionnettiste.",
     "duration": 83,
-    "picture": "../SRC/Img/Couv_ghost_in_the_shell.webp"
+    "picture": "SRC/Img/Couv_ghost_in_the_shell.webp"
   },
   {
     "movie": "AKIRA",
